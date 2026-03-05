@@ -11,7 +11,7 @@ def main() -> None:
     print(f"OTP (secured) : {otp.generate_secure()}")
     banner("PASSWORD GENERATION")
 
-    password = PasswordGenerator(length =10)
+    password = PasswordGenerator(length=10)
     print(f"PASSWORD GENERATED (basic) : {password.generate()}")
     print(f"PASSWORD GENERATED (secured) : {password.generate_secure()}")
 
@@ -20,7 +20,7 @@ def strong_pw_gen() -> None:
     password = PasswordGenerator(length=15, special=True, digits=True)
     banner("STRONG PASSWORD GENERATION")
     print(f"STRONG PASSWORD GENERATED (basic) : {password.generate()}")
-    print(f"STRONG PASSWORD GENERATION (secured) : {password.generate_secure()}")
+    print(f"STRONG PASSWORD GENERATED (secured) : {password.generate_secure()}")
 
 
 if __name__ == "__main__":
