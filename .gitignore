@@ -1,12 +1,49 @@
+# =========================
 # Python bytecode
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Virtual environments
+# =========================
+# Virtual Environments
+# =========================
 venv/
 .venv/
 env/
+ENV/
 
-# OS junk
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS Generated Files
+# =========================
 .DS_Store
 Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Testing & Coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Environment Variables
+# =========================
+.env
