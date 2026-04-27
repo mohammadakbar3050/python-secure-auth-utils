@@ -13,9 +13,9 @@ def test_otp_with_digits():
 
 def test_secure_length():
     otp = OTPGenerator(length=6)
-    assert len(otp.generate()) == 6
+    assert len(otp.generate_secure()) == 6
 
 
 def test_secure_with_digits():
     otp = OTPGenerator(length=6)
-    assert otp.generate().isdigit()
+    assert otp.generate_secure().isdigit()

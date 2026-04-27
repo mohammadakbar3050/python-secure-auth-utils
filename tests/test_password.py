@@ -13,7 +13,7 @@ def test_password_with_digits():
 
 def test_secure_password_length():
     pw = PasswordGenerator(length=15)
-    assert len(pw.generate()) == 15
+    assert len(pw.generate_secure()) == 15
 
 
 def test_secure_password_with_digits():
